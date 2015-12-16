@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Grayscale - Start Bootstrap Theme</title>
+    <title>Nothing Studio</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -41,7 +41,7 @@
                     <i class="fa fa-bars"></i>
                 </button>
                 <a class="navbar-brand page-scroll" href="#page-top">
-                    <i class="fa fa-play-circle"></i>  <span class="light">Start</span> Bootstrap
+                    <i class="fa fa-play-circle"></i>  <span class="light">Nothing</span> Studio
                 </a>
             </div>
 
@@ -52,7 +52,7 @@
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
-                    <li>
+<!--                     <li>
                         <a class="page-scroll" href="#about">About</a>
                     </li>
                     <li>
@@ -60,7 +60,7 @@
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -82,7 +82,7 @@
                                     <h5><span class="glyphicon glyphicon-shopping-cart"></span> Shopping Cart</h5>
                                 </div>
                                 <div class="col-xs-6">
-                                    <button type="button" class="btn btn-primary btn-sm btn-block">
+                                    <button type="button" class="btn btn-primary btn-sm btn-block" onclick="location.href='index.html';">
                                         <span class="glyphicon glyphicon-share-alt"></span> 返回Nothing Studio
                                     </button>
                                 </div>
@@ -159,19 +159,19 @@
                                 </textarea>
                             </div>
                                 
-                            <button type="submit" class="btn btn-default" id="Submit">Submit</button>
                             </form>
 
                         </div>
                     </div>
                     <div class="panel-footer">
                         <div class="row text-center">
-                            <div class="col-xs-9">
-                                <h4 class="text-right">Total <strong>$50.00</strong></h4>
+                            <div class="col-xs-9" id="finalTotal">
+
                             </div>
                             <div class="col-xs-3">
-                                <button type="button" class="btn btn-success btn-block">
-                                    Checkout
+                                <button type="button" class="btn btn-success btn-block" id="Submit"
+                                data-toggle="modal" data-target="#send_dialog">
+                                    訂購
                                 </button>
                             </div>
                         </div>
@@ -180,10 +180,32 @@
         </div>
     </div>
     </section>
+
+    <!-- sended dialog -->
+    <div class="modal fade" id="send_dialog" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">訂購完成</h4>
+                </div>
+                <div class="modal-body">
+                    <p>感謝您的購買，我們將會為您訂做產品&hellip;</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" onclick="location.href='index.html';">返回首頁</button>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+
     <!-- Footer -->
     <footer>
         <div class="container text-center">
-            <p>Copyright &copy; Your Website 2014</p>
+            <p>Copyright &copy; Nothing Studio 2015</p>
         </div>
     </footer>
 

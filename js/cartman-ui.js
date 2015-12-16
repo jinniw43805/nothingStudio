@@ -195,6 +195,8 @@
 
             var template = $("#CheckoutTable");
 
+            var cleanButton = $('#CartCleanBtn');
+
             elem.empty();
             elem.append(template.children().clone());
 
@@ -252,7 +254,15 @@
 
             //render button 
 
+            cleanButton.click(function() {
+                // This will move forward in the checkout process
+                self.cartman.clear();
+                // render total
+                console.log("clean total");
+                $("#checkoutTotal").empty();
 
+
+            });
 
 
         },

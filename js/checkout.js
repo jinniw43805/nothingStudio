@@ -92,7 +92,7 @@ $(document).ready(function($) {
 		}
 
 		elem.append("<h4 class='text-right'>"+"Total : "+ "<strong>" + total+ "</strong></h4>'");
-
+		$("#finalTotal").append("<h4 class='text-right'>"+"Total : "+ "<strong>" + total+ "</strong></h4>'");
 	};
 
 	refreshCheckout(checkout);

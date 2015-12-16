@@ -10,6 +10,12 @@ body {
     color: #fff;
     background-color: #000;
 }
+.tab-content{
+    color: black ;
+}
+#product-intro-bar{
+    color: black ;
+}
 button#indexShoppingCart{
     margin-top: 7px;
     margin-right: 5px;
