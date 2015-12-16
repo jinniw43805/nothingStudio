@@ -27,9 +27,14 @@ button#indexShoppingCart{
     }
 
 }
-div#exposeMask{
-    z-index: 0;
+@media (min-width: 992px){
+    .container {
+        width: 90%;
+    }
+    div#exposeMask{
+        z-index: 0;
 
+    }
 }
 p#checkoutTotal{
     text-align: right;

@@ -65,7 +65,7 @@
 
         var selectors = {
 
-            minicart : "#mini-cart",
+            minicart : "[id=mini-cart]",
 
             minicartTemplate : "#mini-cart-template",
 
