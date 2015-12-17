@@ -20,6 +20,9 @@ button#indexShoppingCart{
     margin-top: 7px;
     margin-right: 5px;
 }
+button#CheckoutButton{
+    margin-right: 5px;
+}
 @media (max-width:560px) {
     header.intro{
         background-size: contain;
