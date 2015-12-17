@@ -6,7 +6,7 @@ $(document).ready(function($) {
 		/* Act on the event */
 		console.log("submit!!!");
 
-		var name = $("#InputName").val();
+			var name = $("#InputName").val();
 		var phone = $("#InputPhone").val();
 		var email =$('#InputEmail').val();
 		var note =$('#InputNote').val();
@@ -25,7 +25,18 @@ $(document).ready(function($) {
 
 		// });
 
-		$.ajax({
+
+		//checkout content 
+		if(name==[]){
+			alert("Please fill Name");
+		}else if(phone ==[]){	//error input
+			alert("Please fill Phone");
+
+		}else if(email == []){
+			alert("Please fill Email");
+
+		}else {
+			$.ajax({
 		        method: "POST",
 		        dataType : "json",
 		        // crossDomain: true,
@@ -47,12 +58,19 @@ $(document).ready(function($) {
 		    	console.log("success");
 		    });
 
+		    $('#send_dialog').modal('show');
+
+
+		}
+		
+
+		
 	});
 
 
 	//render 
 
-	var checkout = $(".checkout-body")
+	var checkout = $(".checkout-body");
 
 
 	var refreshCheckout = function (elem){
