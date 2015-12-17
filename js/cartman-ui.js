@@ -261,9 +261,18 @@
                 console.log("clean total");
                 $("#checkoutTotal").empty();
 
-
             });
 
+
+            $('#CheckoutButton').click(function() {
+                console.log(data);
+
+                if(data.count!=0){
+                    window.location.href = 'checkout.html';
+                }else{
+                    alert("購物為空！");
+                }
+            });
 
         },
         refreshCheckout : function(elem) {
